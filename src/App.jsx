@@ -51,7 +51,7 @@ class App extends React.Component {
           img: '5.png',
           desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing.',
           category: '5',
-          price: '4.99'
+          price: '454.99'
         }
       ]
     }
