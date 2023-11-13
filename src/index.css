@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+header {
+  position: relative;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+
+}
+
+header ul.nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url('./img/header.logo.jpg') no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #1c191993;
+  position: relative;
+}
+
+header .presentation::after {
+  content: 'Лучшие товары для вашего дома ';
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header .presentation::before {
+  content: 'По лучшим ценам';
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+header .shop-car-button {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-car-button:hover,
+header .shop-car-button.active {
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+
+header .shop-card {
+  position: absolute;
+  top: 30px;
+  width: 450px;
+  right: 0;
+  -webkit-box-shadow: 0px 14px 39px 17px rgba(133, 133, 133, 0.12);
+  -moz-box-shadow: 0px 14px 39px 17px rgba(133, 133, 133, 0.12);
+  box-shadow: 0px 14px 39px 17px rgba(133, 133, 133, 0.12);
+  background: #fafafa;
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .shop-card .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  background: #95959562;
+}
+
+header .shop-card .empty h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-card .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-card .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-card .item p {
+  color: #797979;
+  font-weight: 600;
+}
+
+header .shop-card .item .delete-icon {
+  position: relative;
+  top: -25px;
+  float: right;
+  color: #ca5252;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+header .shop-card .item .delete-icon:hover{
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+header .shop-card .summa{
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+/*  */
+.categories div{
+  display: inline-block;
+  background: #f2f2f2;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+.categories div:hover,
+.categories div:active{
+  border-color: silver;
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background: #f5f5f5;
+  position: relative;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+main .item img {
+  width: 100%;
+  border: 10px 10px 0 0;
+  transition: transform 500ms ease;
+}
+
+main .item img:hover {
+  transform: scale(1.05);
+}
+
+main h2,
+main p,
+main b {
+  margin: 10px 20px;
+  color: #333
+}
+
+main b {
+  color: #5fa36a;
+}
+
+main .add-to-cart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ca5252;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+  transform: scale(1.5) translateY(-5px);
+}
